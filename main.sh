@@ -5,7 +5,7 @@ PROXY_BIN="/usr/bin/proxy"
 LOG_DIR="/var/log"
 SERVICE_DIR="/etc/systemd/system"
 DEFAULT_BUFFER_SIZE=32768
-DEFAULT_RESPONSE="@DuTra01"
+DEFAULT_RESPONSE="@INFOBOX00"
 
 load_token_from_file() {
     if [ -f "$TOKEN_FILE" ]; then
@@ -98,7 +98,7 @@ start_proxy() {
         fi
     fi
 
-    read -rp "$(prompt 'Status HTTP (Padrão: @DuTra01): ')" response
+    read -rp "$(prompt 'Status HTTP (Padrão: @INFOBOX00): ')" response
     response=${response:-$DEFAULT_RESPONSE}
 
     if get_yes_no_response "n" "$(prompt 'Habilitar somente SSH?')"; then
@@ -195,7 +195,7 @@ main() {
     check_token
 
     echo -e "\033[1;34m╔═════════════════════════════╗\033[0m"
-    echo -e "\033[1;34m║\033[1;41m\033[1;32m      DTunnel Proxy Menu     \033[0m\033[1;34m║"
+    echo -e "\033[1;34m║\033[1;41m\033[1;32m      INFOBOX Proxy Menu     \033[0m\033[1;34m║"
     echo -e "\033[1;34m║═════════════════════════════║\033[0m"
 
     show_ports_in_use
