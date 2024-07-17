@@ -1,6 +1,6 @@
-# DTunnel Proxy
+# Infobox Proxy
 
 ### INSTALL
 ```sh
-curl -s -L https://raw.githubusercontent.com/DTunnel0/DTunnelProxyServerRelease/main/install.sh | bash
+curl -s -L https://raw.githubusercontent.com/infobox2/PROXY/main/install.sh | bash
 ```
